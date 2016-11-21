@@ -1,0 +1,51 @@
+border {
+	width: 70%;
+	margin: 0 auto;
+}
+.enter {
+	border: 1px solid black;
+	border-radius: 5px;
+	padding: 5px;
+	float:left;
+	margin: 15px;
+	font-family: sans-serif;
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.enter p.title {
+	text-align: center;
+	font-size: 18px;
+	color: #66757f;
+}
+.log_field {
+	border: 1px solid black;
+	border-radius: 3px;
+	background-color: #e1e8ed;
+	width: 270px;
+	font-size: 12pt;
+	margin: 5px;
+	padding: 3px;
+}
+.log_submit {
+	border: 1px solid #55acee;
+	background-color: #55acee;
+	border-radius: 3px;
+	margin: 5px;
+	width: 270px;
+	font-size: 14pt;
+	color: white;
+}
+
+.register {
+	border: 1px solid #292f33;
+	background-color: #292f33;
+	border-radius: 3px;
+	margin: 5px;
+	width: 370px;
+	font-size: 14pt;
+	color: #e1e8ed;
+}
