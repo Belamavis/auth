@@ -38,6 +38,7 @@
 		$result = $mysqli->query($new_user_query);
 		if ($result) {
 			echo "Пользователь ".$_POST['nickname']. " успешно создан.";
+			mail($_POST['email'], "Регистрация успешно пройдена", "Поздравляю!");
 			$register_success = TRUE;
 			
 		} else {
