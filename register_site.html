@@ -1,0 +1,31 @@
+<html>
+	<head>
+		<title>Регистрация на сайте</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="enter">
+			<p class="title">Регистрация на сайте</p>
+			<form action="cgi/register_site.php" method="POST">
+				<input class="log_field" name="nickname" placeholder="Введите имя" required><br>
+				<input class="log_field" name="email" type="email" placeholder="Введите адрес электронной почты" required><br>
+				<input class="log_field" name="password" type="password" placeholder="Введите пароль" required><br>
+				<input class="log_field" name="confirm_password" type="password" placeholder="Повторите пароль" required><br>
+				<button class="log_submit" name="submit" type="submit">Зарегистрироваться</button>
+			</form>
+			<div class="error" id="username_exists">
+				<p>Пользователь с таким имененм уже существует!</p>
+			</div>
+			<div class="error" id="email_exists">
+				<p>На данный почтовый адрес уже зарегистрирован пользователь!</p>
+			</div>
+			<div class="error" id="passwords_doesnt_match">
+				<p>Введенные пароль и подтверждение не совпадают!</p>
+			</div>
+			<div class="error" id="connection_error">
+				<p>Ошибка при работе с базой данных</p>
+			</div>
+		</div>
+	</body>
+</html>

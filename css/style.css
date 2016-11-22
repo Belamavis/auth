@@ -49,3 +49,11 @@ border {
 	font-size: 14pt;
 	color: #e1e8ed;
 }
+
+.error {
+	border: 1px dotted red;
+	color: red;
+	text-align: center;
+	margin: 5px;
+	width: 270px;
+}

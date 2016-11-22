@@ -1,4 +1,5 @@
 <?php
+	header("Content-Type: text/html; charset=utf-8");
 	ini_set('display_errors',1);
     error_reporting(E_ALL);
     
@@ -11,7 +12,7 @@
 	$pwd_hash = md5($_POST['password']);
 	$result = $mysqli->query($user_query);
 	if (!($result)) {
-			echo "Неверное имя пользователя или неверный пароль - 1";
+			echo "Неверное имя пользователя или неверный пароль";
 			die();
 		}  else {
 				$login_data = $result->fetch_assoc();
@@ -20,7 +21,7 @@
 			echo "Добро пожаловать!";
 			die();
 		} else {
-			echo "Неверное имя пользователя или неверный пароль - 2";
+			echo "Неверное имя пользователя или неверный пароль";
 			die();				
 			}
 	$mysqli->close();
